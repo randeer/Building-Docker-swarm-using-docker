@@ -32,6 +32,8 @@ docker run -d \
     
 We need to run this command on host VM.
 
+![image](https://user-images.githubusercontent.com/39120946/202180729-c9ed7195-d94b-4911-a8ea-28a36ce07de1.png)
+
 ![image](https://user-images.githubusercontent.com/39120946/202180075-b3141e72-0d9d-463c-a280-65a5d5158156.png)
 
 
