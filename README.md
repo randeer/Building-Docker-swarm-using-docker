@@ -21,6 +21,18 @@ swarmpit/install:1.9
 Navigate to http://192.168.99.100:888 to view Swarmpit web UI. Note, that you can use IP of any of the created nodes eg. address http://192.168.99.101:888 would work too. This is thanks to the ingress load-balancer running in you cluster by default.
 
 ------------------------------------
+To acess this using web we can use the below browser docker image (https://hub.docker.com/r/jlesage/firefox)
+
+docker run -d \
+    --name=firefox \
+    -p 5800:5800 \
+    -v /docker/appdata/firefox:/config:rw \
+    --shm-size 2g \
+    jlesage/firefox
+    
+We need to run this command on host VM.
+
+---------------------------------------------------------------
 Update a node as a worker or manager
 
 docker node update --role manager node-3
