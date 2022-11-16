@@ -18,6 +18,9 @@ docker run -it --rm \
   --volume /var/run/docker.sock:/var/run/docker.sock \
 swarmpit/install:1.9
 
+![image](https://user-images.githubusercontent.com/39120946/202184276-8ab9b456-f810-47cf-aad8-1a948f0f95e7.png)
+
+
 Navigate to http://192.168.99.100:888 to view Swarmpit web UI. Note, that you can use IP of any of the created nodes eg. address http://192.168.99.101:888 would work too. This is thanks to the ingress load-balancer running in you cluster by default.
 
 ------------------------------------
