@@ -1,0 +1,19 @@
+version: "3"
+services:
+ service-1:
+  image: image-name
+  ports:
+   - 8080
+  deploy:
+   replication: 2
+   mode: replicated
+   labels: [APP=VOTING]
+   update_config:
+    parallelism: 2
+    delay: 10s
+   restart_policy:
+    condition: on-failure
+    max_attempts: 3
+    window: 120
+   placements:
+    constraints: [ node.role == manager ]
