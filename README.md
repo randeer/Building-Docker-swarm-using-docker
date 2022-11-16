@@ -1,4 +1,4 @@
-# Building Docker Swarm Using Docker
+# Building a Docker Swarm Using Docker
 Building a Dockerize enviroment
 
 After installing docker.
